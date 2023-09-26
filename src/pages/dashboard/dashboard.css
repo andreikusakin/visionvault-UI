@@ -1,0 +1,75 @@
+.dashboard-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.dashboard-menu-btn{
+    padding: .75rem;
+    margin-left: 1rem;
+    min-width: 3rem;
+    
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logo-dashboard {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.4rem;
+  color: var(--main-text-color);
+}
+
+.btn-add-gallery {
+  padding: 0.75rem 2rem;
+  min-width: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: var(--main-text-color);
+  margin-bottom: 2rem;
+  transition: all 0.2s ease-out;
+}
+
+.btn-add-gallery:hover {
+  background-color: var(--btn-hover-color);
+  transition: all 0.2s ease-out;
+}
+
+.gallaries-grid {
+  max-width: 1600px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  grid-gap: 1rem;
+}
+
+.search-bar {
+  max-width: 400px;
+  width: 90%;
+  border: var(--main-text-color) 1px solid;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .gallaries-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .btn-add-gallery {
+    font-size: 1rem;
+  }
+
+  .dashboard-menu-actions{
+    font-size: 1rem;
+  }
+}
